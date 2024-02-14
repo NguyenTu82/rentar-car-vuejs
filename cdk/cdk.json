@@ -1,0 +1,91 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/cdk.ts",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
+      "package*.json",
+      "yarn.lock",
+      "node_modules",
+      "test"
+    ]
+  },
+  "context": {
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "@aws-cdk/core:stackRelativeExports": true,
+    "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
+    "@aws-cdk/aws-lambda:recognizeVersionProps": true,
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": true,
+    "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": true,
+    "@aws-cdk/core:checkSecretUsage": true,
+    "@aws-cdk/aws-iam:minimizePolicies": true,
+    "@aws-cdk/aws-ecs:arnFormatIncludesClusterName": true,
+    "@aws-cdk/core:validateSnapshotRemovalPolicy": true,
+    "@aws-cdk/aws-codepipeline:crossAccountKeyAliasStackSafeResourceName": true,
+    "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true,
+    "@aws-cdk/aws-sns-subscriptions:restrictSqsDescryption": true,
+    "@aws-cdk/core:target-partitions": [
+      "aws",
+      "aws-cn"
+    ],
+    "global": {
+      "prefix": "cdk-tr-uqey"
+    },
+    "dev": {
+      "env": {
+        "account": "684295086767",
+        "region": "ap-northeast-1",
+        "environment": "dev"
+      },
+      "route53": {
+        "domainName": "dev-freekey.hitseries.com",
+        "certificateArn": "arn:aws:acm:us-east-1:684295086767:certificate/bfd38323-6e42-43e4-bc2c-28e43440fddb",
+        "recordName": "dev-user-uqey"
+      }
+    },
+    "staging": {
+      "env": {
+        "account": "695745666982",
+        "region": "ap-northeast-1",
+        "environment": "staging"
+      },
+      "route53": {
+        "domainName": "stg.rent.uqey.com",
+        "certificateArn": "arn:aws:acm:us-east-1:695745666982:certificate/44ea38ab-c8f8-4337-a4ee-b7261a4b6201",
+        "recordName": "user"
+      }
+    },
+    "ppr": {
+      "env": {
+        "account": "509293022898",
+        "region": "ap-northeast-1",
+        "environment": "ppr"
+      },
+      "route53": {
+        "domainName": "ppr.rent.uqey.com",
+        "certificateArn": "arn:aws:acm:us-east-1:509293022898:certificate/13aa99c6-c207-4031-b555-c4e86759ecb0",
+        "recordName": "user"
+      }
+    },
+    "prd": {
+      "env": {
+        "account": "485587923732",
+        "region": "ap-northeast-1",
+        "environment": "prd"
+      },
+      "route53": {
+        "domainName": "uqey.com",
+        "certificateArn": "arn:aws:acm:us-east-1:485587923732:certificate/618c104f-d40b-4700-856e-f31f9aa11b68",
+        "recordName": "rent"
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>Core eKYC Browser SDK ドキュメント</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://js.trustdock-ekyc.com/v1/browser-sdk.js" defer></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="wrapper">
+				<p>これから運転免許証とご本人様の顔を写しての撮影が必要となります。 <br />ご本人様以外の写り込みが無い場所に移動頂き、免許証のご用意をお願いいたします。</p>
+				<section>
+					<core-ekyc-verification project-id="{{%VITE_EKYC_PROJECT_ID%}}" package-id="{{%VITE_EKYC_PACKGE_ID%}}">
+						<button slot="start-button" class="custom-modal-btn custom-modal-confirm">本人確認を開始する</button>
+					</core-ekyc-verification>
+					<!--            <button onclick="test1()">test case 1</button>-->
+					<!--            <button onclick="test2()">test case 2</button>-->
+					<!--            <button onclick="test3()">test case 3</button>-->
+					<!--            <button onclick="test4()">test case 4</button>-->
+					<!--            <button onclick="test5()">test case 5</button>-->
+				</section>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		// <core-ekyc-verification>タグを取得する
+		const coreEkycVerification = document.querySelector('core-ekyc-verification');
+
+		// const resultTest = {
+		//     "verificationResult": {
+		//         "id": "7e1e0fc2-e2a8-43de-83eb-460add298ce8",
+		//         "status": "",
+		//         "process_results": [
+		//             {
+		//                 "type": "document_reader_japan_ln",
+		//                 "id": "70de407f-8d4d-4633-aecc-45ca3aba6569",
+		//                 "status": "completed",
+		//                 "result": "succeeded",
+		//                 "completed_at": "2022-09-28T18:35:39+09:00",
+		//                 "data": {
+		//                     "result": "failed",
+		//                     "type": "drivers_license",
+		//                     "scanned_fields": {
+		//                         "IDNumber": {
+		//                             "label": "ID number",
+		//                             "value": "012345678900"
+		//                         },
+		//                         "expiryDate_dateType": {
+		//                             "label": "Expiry date formatted",
+		//                             "value": "2024/06/01"
+		//                         },
+		//                         "issueDate2": {
+		//                             "label": "Issue date2",
+		//                             "value": "平成17年06月01日"
+		//                         },
+		//                         "licenseColor": {
+		//                             "label": "License color",
+		//                             "value": "gold"
+		//                         },
+		//                         "licenseConditions": {
+		//                             "label": "License conditions",
+		//                             "value": "眼鏡等\n見本"
+		//                         },
+		//                         "licenseType": {
+		//                             "label": "License type",
+		//                             "value": "大型/中型/-/-/大特/大自二/普自二/小特/原付/大二/中二/普二/大特二/引引二"
+		//                         },
+		//                         "expiryDate": {
+		//                             "label": "Expiry date",
+		//                             "value": "2024年(令和06年)06月01日まで有効"
+		//                         },
+		//                         "issueDate": {
+		//                             "label": "Issue date",
+		//                             "value": "令和01年05月07日12345"
+		//                         },
+		//                         "issueDate1": {
+		//                             "label": "Issue date1",
+		//                             "value": "平成15年04月01日"
+		//                         },
+		//                         "name": {
+		//                             "label": "Name",
+		//                             "value": "日本花子"
+		//                         },
+		//                         "birthday": {
+		//                             "label": "Birthday",
+		//                             "value": "昭和61年5月1日生"
+		//                         },
+		//                         "issueDate1_dateType": {
+		//                             "label": "Issue date1 formatted",
+		//                             "value": "2003/04/01"
+		//                         },
+		//                         "issueDate3": {
+		//                             "label": "Issue date3",
+		//                             "value": "平成29年08月01日"
+		//                         },
+		//                         "issuingOrganization": {
+		//                             "label": "Issuing organization",
+		//                             "value": "○○○○○\n公安委員会"
+		//                         },
+		//                         "remarks": {
+		//                             "label": "Remarks",
+		//                             "value": ""
+		//                         },
+		//                         "address": {
+		//                             "label": "Address",
+		//                             "value": "東京都千代田区霞が関2-1-2"
+		//                         },
+		//                         "birthday_dateType": {
+		//                             "label": "Birthday formatted",
+		//                             "value": "1986/05/01"
+		//                         },
+		//                         "goodDriver": {
+		//                             "label": "Good driver",
+		//                             "value": "優良"
+		//                         },
+		//                         "issueDate2_dateType": {
+		//                             "label": "Issue date2 formatted",
+		//                             "value": "2005/06/01"
+		//                         },
+		//                         "issueDate3_dateType": {
+		//                             "label": "Issue date3 formatted",
+		//                             "value": "2017/08/01"
+		//                         },
+		//                         "issueDate_dateType": {
+		//                             "label": "Issue date formatted",
+		//                             "value": "2019/05/07"
+		//                         },
+		//                         "nameNormalized": {
+		//                             "label": "Normalized name",
+		//                             "value": "日本 花子"
+		//                         }
+		//                     },
+		//                     "modified_fields": {}
+		//                 }
+		//             },
+		//             {
+		//                 "type": "face_matching_japan_td",
+		//                 "id": "f5efa007-fb8e-493b-bde7-c2e496cb1888",
+		//                 "status": "completed",
+		//                 "result": "failed",
+		//                 "completed_at": "2022-09-28T18:36:05+09:00",
+		//                 "data": {
+		//                     "result": "failed",
+		//                     "similarity": 0.2691361
+		//                 }
+		//             }
+		//         ],
+		//         "completed_at": "2022-09-28T09:36:05Z"
+		//     }
+		// }
+		//
+		// function test1() {
+		//     resultTest.verificationResult.process_results[0].result = 'failed';
+		//     console.log(resultTest)
+		//     try {
+		//         window.ReactNativeWebView.postMessage(JSON.stringify(resultTest))
+		//     } catch (error) {
+		//         console.log("CATCH window.ReactNativeWebView:", error);
+		//     }
+		// }
+		// function test2() {
+		//     resultTest.verificationResult.process_results[0].data.type = 'individual_license';
+		//     console.log(resultTest)
+		//     try {
+		//         window.ReactNativeWebView.postMessage(JSON.stringify(resultTest))
+		//     } catch (error) {
+		//         console.log("CATCH window.ReactNativeWebView:", error);
+		//     }
+		// }
+		// function test3() {
+		//     resultTest.verificationResult.process_results[1].result = 'failed';
+		//     console.log(resultTest)
+		//     try {
+		//         window.ReactNativeWebView.postMessage(JSON.stringify(resultTest))
+		//     } catch (error) {
+		//         console.log("CATCH window.ReactNativeWebView:", error);
+		//     }
+		// }
+		// function test4() {
+		//     resultTest.verificationResult.process_results[1].data.similarity = 84;
+		//     console.log(resultTest)
+		//     try {
+		//         window.ReactNativeWebView.postMessage(JSON.stringify(resultTest))
+		//     } catch (error) {
+		//         console.log("CATCH window.ReactNativeWebView:", error);
+		//     }
+		// }
+		// function test5() {
+		//     resultTest.verificationResult.process_results[0].result = 'succeeded';
+		//     resultTest.verificationResult.process_results[0].data.type = 'drivers_license';
+		//     resultTest.verificationResult.process_results[1].result = 'succeeded';
+		//     resultTest.verificationResult.process_results[1].data.similarity = 85;
+		//     console.log(resultTest)
+		//     try {
+		//         window.ReactNativeWebView.postMessage(JSON.stringify(resultTest))
+		//     } catch (error) {
+		//         console.log("CATCH window.ReactNativeWebView:", error);
+		//     }
+		// }
+
+		// 身元確認が完了された時のイベントを受け取る
+		coreEkycVerification.addEventListener('completed', (event) => {
+			const result = event.detail;
+
+			// console.log(result);
+			try {
+				window.ReactNativeWebView.postMessage(JSON.stringify(result));
+			} catch (error) {
+				console.log('CATCH window.ReactNativeWebView:', error);
+			}
+		});
+
+		// 身元確認が中断された時のイベントを受け取る
+		coreEkycVerification.addEventListener('aborted', (event) => {
+			const result = event.detail;
+		});
+	</script>
+
+	<style>
+		p {
+			font-size: 20px;
+			font-family: 'Noto Sans JP', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 27px;
+			text-transform: uppercase;
+			color: #5f5f5f;
+		}
+		.custom-modal-btn {
+			font-family: 'Noto Sans JP', sans-serif;
+			padding: 0 20px;
+			min-width: 160px;
+			height: 48px;
+			border: none;
+			border-radius: 999px;
+		}
+		.custom-modal-confirm {
+			background-color: #0c47a1;
+			color: #ffffff;
+		}
+		html,
+		body {
+			height: 100%;
+		}
+		.main {
+			height: 100%;
+			width: 100%;
+			display: table;
+			text-align: center;
+		}
+		.wrapper {
+			display: table-cell;
+			height: 100%;
+			vertical-align: middle;
+		}
+	</style>
+</html>

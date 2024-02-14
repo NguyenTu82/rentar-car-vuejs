@@ -1,0 +1,356 @@
+button:
+  reserve: 予約する
+  search_for: 検索する
+  register: 会員登録
+  login: ログイン
+  logout: ログアウト
+  boarding_station: 乗車地と同じ
+  cancel: キャンセル
+  cancel_booking: 予約キャンセル
+  delete: 削除
+  ok: OK
+  addition: 追加
+  return: 戻る
+  keep_typing: 入力続ける
+  confirmation: 確認
+  next: 次へ
+  keep_fixing: 修正続ける
+  return_previous_screen: 前の画面へ戻る
+  remove_passengers: 追加運転者を全て削除
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+  choose-plans: Choose Plans
+intro:
+  desc: Opinionated Vite Starter Template. Customized to support modular architecture pattern.
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  aka: Also known as
+  whats-your-name: What's your name?
+  whats-your-email: What's your email?
+  fill-up-form: Fill up the form to proceed
+not-found: 情報がありません。
+order:
+  order-summary: Order Summary
+  description: You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+  plan: Plan
+  year: year
+  month: month
+  week: week
+  plans:
+    annual: Annual
+    monthly: Monthly
+    weekly: Weekly
+  confirm-selected-plan: Confirm Selected Plan
+  cancel-order: Cancel Order
+  thanks-message: Thank you for your interest!
+  plan-contact-info: One of our employee will contact with you soon. You can grab a cup of coffee in the meantime.
+no-data-saved: This demo project is not making any external API request. So, your data is not saving anywhere else. It uses Pinia (vue 3 state management) module to save your form data in your browser.
+home:
+  rental_car_smartphone: レンタカーをもっと便利に、スピーディーに
+  reserved_smartphone: Uqey（ユーキー）は店頭受付・待ち時間なしでレンタカーを借りることが出来るサービスです。
+  reserved_smartphone1: 予約～カギの施解錠～返却・精算まで、レンタカー利用に関する一連の流れをスマホのアプリ一つで全て完結できます。
+  des1: Apple および Apple ロゴは米国その他の国で登録された Apple Inc. の商標です。
+  des2: App Store は Apple Inc. のサービスマークです。
+  des3: Google Play および Google Play ロゴは、Google LLC の商標です。
+  recommendation: オススメ
+  more_info: More info
+  booking_confirmation_btn: アカウント確認
+  app_download: アプリダウンロード
+  install: 入手
+  name_uqey: Uqey（ユーキー）
+  close: 閉じる
+  note_footer: "© TOKAI RIKA CO., LTD. ALL Rights Reserved"
+  faq: よくあるご質問 (FAQ)
+  partner: 特定商取引法に基づく表記
+search:
+  map_search: MAP検索
+  map_search_pla: 地名、駅名、店名などで検索
+  date_time_boarding: 乗車日時
+  ride_time: 乗車時間
+  return_time: 返却時間
+  return_date_time: 返却日時
+  boarding_place: 乗車地
+  place_return: 返却地
+  drop_off_station: 付近のステーション
+  no_station: ステーションがありません。
+  selection: 選　択
+  return_location: このステーションを返却地に使う
+  boarding_point: このステーションを乗車地に使う
+  modal_uqey_title: Uqey
+  modal_uqey_building_station: 新丸ビルステーション
+booking:
+  title_cancel: キャンセルポリシー
+  location: 所在地
+  business_hours: 営業時間
+  bk_phone: 電話
+  category: カテゴリ選択
+  time_boarding: 乗車日時
+  boarding_place: 乗車地
+  return_time: 返却日時
+  place_return: 返却地
+  FREEKEY_compatible: FREEKEY対応
+  car_model_name: '車種名：'
+  manufacturer: 'メーカー：'
+  color_car: 'カラー: '
+  capacity: '定員数：'
+  capacity_name: 名
+  displacement: '排気量：'
+  displacement_cc: cc
+  fuel_type_car: '燃料: '
+  4WD/2WD: '4WD/2WD: '
+  WD: 'WD'
+  fuel_consumption: '燃費：'
+  fuel_consumption_km: km/L
+  maximum_loading_capacity : '最大積載量：'
+  vehicle_total_weight: '車両総重量：'
+  type_car: 'MT / AT ：'
+  type_car_AT: 'MT / AT ： AT'
+  type_car_MT: 'MT / AT ： MT'
+  weight_kg: kg
+  size: '寸法：'
+  car_navi : 'カーナビ： '
+  yes_checkbox: '有り'
+  no_checkbox: '無し'
+  car_etc : 'ETC: '
+  appeal_point: 'アピールポイント: '
+  size_mmm: mm (全長/全幅/全高)
+  note_vehicle: ※車両の仕様(排気量など)は店舗によって異なる場合があります。
+  note_WLTC: '*WLTCモード走行（国土交通省審査値）'
+  note_WLTC2: WLTCモードは、市街地、郊外、高速道路の各走行モードを平均的な使用時間配分で構成した国際的な走行モードです。
+  applicable_fee: 適用料金(税込10%)
+  circle: 円
+  return_vehicle: 前の画面へ戻る
+  book_vehicle: この車両で予約する
+  modal_login_lg: ログイン
+  modal_login_member: 会員でない方はこちら
+  modal_login_register: 登録
+  modal_login_email: メールアドレス
+  modal_login_pasword: パスワード
+  modal_login_forgot_pasword: パスワードを忘れましたか?
+  modal_login_error: 'エラー :'
+  choose_insurance: 保険・補償を選ぶ
+  can_one_choose_insurance: （任意選択は１つまで選択可能）
+  choose_option: オプションを選ぶ
+  title_insurance: 保険・補償
+  accidents: 事故・トラブル時のご負担が0円！
+  credit_card_selection: クレジットカード選択
+  final_payment: ※ 最終お支払いは返却完了時となります
+  add_new_card: 新しいカードを追加
+  number: 番号
+  date_of_expiry: 有効期限
+  security_code: セキュリティコード
+  card_holder: カード名義
+  cancel: キャンセル
+  payment_method: お支払い方法選択
+  credit_card_payment: クレジットカード決済
+  reservation_overview: 予約概要
+  reservation_cancel_booking: ご利用概要
+  plan_to_use: ご利用予定
+  double_plan: オプション
+  price_cancle : キャンセル料金
+  over_time : 延長料金
+  total_amount: ご利用合計金額
+  your_reservation: 予約が完了しました。
+  available_boarding_date_time: 乗車日時までに、必ずUqeyアプリが利用可能であることを確認してください。
+  forward_to_seeing: 当日のご来店をお待ちしております。
+  licence_valid_alert: ご利用日までに免許証の再登録をお願いします。再登録が行われない場合、デジタルキーのご利用ができません。
+  reservation_list: 予約一覧へ
+  return_previous: 前の画面へ戻る
+  text_perfect1: ボタンを押すと予約が成立します。ご予約の際には
+  text_perfect2: を改めてご確認ください。尚、決済は利用終了後に行われます。
+  bracket_start: 「
+  bracket_end: 」
+  bracket_comma: 、
+  agree_content: 内容を理解し、同意しました。
+  text_error_start_time1: 利用開始時間が営業時間外の為、
+  text_error_start_time2: の中で指定してください。
+  text_error_end_time: 利用終了時間が営業時間外の為、
+  text_email_exist: 'メールアドレスが重複しています：'
+user:
+  reset_password: パスワード再設定
+  send_password_reset_email: パスワード再設定メールを送りました。設定手続きを進めてください。
+  new_password: 新しいパスワード
+  re_enter_password: パスワード再入力
+  authentication_code: 認証コード
+  resend_verification_code: 認証コードを再送する
+  keep: 保存
+  set_new_password: 新しいパスワードが設定されました。
+  go_login_screen: ログイン画面へ
+  registered: すでに会員の方はログインしてください
+  agree_to: に同意する
+  information_registration: 個人情報登録
+  firstname: 姓
+  lastname: 名
+  firstnamekana: 姓（フリガナ)
+  lastnamekana: 名（フリガナ)
+  phone_number: 携帯電話番号
+  date_of_birth: 生年月日
+  address: 住所
+  email_verification: メールアドレス認証
+  verification_code: 認証コードを入力
+  to_the_next: 認証する
+  retransmission: 再送信
+  retransmission_email: 認証コードを再送する
+  retransmission_sms: 再送する
+  sms_authentication: SMS認証
+  confirm_your_identity: 新しい端末またはブラウザからのログインのため、本人確認をお願いします。
+  enter_confirmation_code: 認証コードを入力
+  digit_number_sent: ご登録の携帯電話番号にSMSで認証コードを送信いたしました。
+  digit_number_sent2: 受け取った6桁の数字を入力してください。
+  digit_number_sent3: 認証コードの有効期限は24時間です。
+  note_confirmation_code1: 登録のメールアドレス宛に認証コードを送信しました。
+  note_confirmation_code2: メッセージに記載された認証コードを入力してください。
+  note_confirmation_code3: メール認証の有効期限は24時間です。
+  certification: 認証する
+  login_error: 'エラー :'
+  input_email_address: 登録済みのメールアドレスを入力
+  send_password: 認証コード送信
+  return_login: ログイン画面へ戻る
+  login: ログイン
+  backlogin: ログイン画面へ
+  login_member: 会員でない方はこちら
+  login_register: 登録
+  login_register_btn: 認証コード送信
+  login_email: メールアドレス
+  resgister_email: メールアドレス(ログインID)
+  login_pasword: パスワード
+  password_again: パスワード再入力
+  login_forgot_pasword: パスワードを忘れた方はこちら
+  addition: 追加
+revervation:
+  location: 所在地
+  business_hours: 営業時間
+  rv_phone: 電話
+  title: 予約一覧
+  boarding_place: 乗車地
+  passenger: 追加運転者
+  boarding_schedule: 乗車スケジュール
+  btn_detailed: 詳細
+  time_boarding: 乗車日時
+  return_time: 返却日時
+  place_return: 返却地
+  FREEKEY_compatible: FREEKEY対応
+  car_model_name: '車種名：'
+  manufacturer: 'メーカー：'
+  color_car: 'カラー: '
+  capacity: '定員数：'
+  capacity_name: 名
+  displacement: '排気量：'
+  displacement_cc: cc
+  fuel_type_car: '燃料: '
+  4WD/2WD: '4WD/2WD: '
+  WD: 'WD'
+  fuel_consumption: '燃費：'
+  fuel_consumption_km: km/L
+  size: '寸法：'
+  car_navi : 'カーナビ： '
+  yes_checkbox: '有り'
+  no_checkbox: '無し'
+  car_etc : 'ETC: '
+  appeal_point: 'アピールポイント: '
+  size_mmm: mm (全長/全幅/全高)
+  reservation_overview: 予約概要
+  add_passenger: 追加運転者登録
+  passenger_list: 追加運転者一覧
+  passenger_person: 人目
+  reservation_cancel_booking: ご利用概要
+  reservation_details: ご予約詳細
+  extend: 延長
+  total_amount: ご利用合計金額
+  price_cancle : キャンセル料金
+  cancel_reservation: 予約キャンセル
+  back_reservation_list: 予約一覧へ戻る
+  back_hisoty_list: 履歴一覧へ戻る
+  cancel_reservation_title: この予約をキャンセルします。
+  reason_cancel : キャンセル理由をお聞かせください。
+  it_ok: よろしいですか？
+  canceled: キャンセルしました。
+  return: 戻る
+  keep: 保存
+  btn_fix: 修正
+  btn_keep_booking: 予約続ける
+  no_passengers_add: これ以上追加運転者追加出来ません。
+  text_error_back: '入力した情報がまだ保存されていません、前の画面に戻ってよろしいですか？'
+  text_error_back2: '修正した情報がまだ保存されていません、前の画面に戻ってよろしいですか？'
+  text_check_success: '追加運転者の情報を保存しました。'
+  text_update_sub_success: '追加運転者を変更しました。'
+  btn_passenger_change: ＋追加運転者変更
+  passengers_not_yet: 追加運転者は登録されていません。
+  delete_all_subdrive: 全ての追加運転者を削除します。よろしいですか？
+  sign: '. '
+rental_history:
+  title: 利用履歴
+  boarding_place: 乗車地
+  boarding_schedule: 乗車スケジュール
+  btn_detailed: 詳細
+  passenger_information: 追加運転者情報
+credit_card:
+  title: 決済情報
+  registered: ご登録のクレジットカード
+  btn_add_card: カードを追加
+  add_new_card: 新しいカードを追加
+  number: 番号
+  date_of_expiry: 有効期限
+  security_code: セキュリティコード
+  card_holder: カード名義
+  remove_credit_card: このクレジットカードを削除しますか？
+  credit_card_deleted: このクレジットカードを削除しました。
+  added_credit_card: カード追加を完了しました。
+  btn_edit: 修正
+  btn_keep_booking: 予約続ける
+user_infor:
+  top: TOP
+  title: 会員情報
+  reservation_list: 予約一覧
+  reservation_history: 利用履歴
+  credit_card: 決済情報
+  basic_information: 基本情報
+  btn_certified: 免許証確認OK
+  btn_certified_no_eKYC: 免許証未確認
+  firstname: 姓
+  lastname: 名
+  firstnamekana: 姓（フリガナ)
+  lastnamekana: 名（フリガナ)
+  gender: '性別'
+  male: 男性
+  female: 女性
+  other: その他
+  phone_number: 携帯電話番号
+  authentication_code: 認証コード
+  send_verification_code: 認証コード送信
+  second: 秒
+  date_of_birth: '生年月日'
+  driving_license: '免許証裏面備考'
+  address: '住所（免許証表面）'
+  change: 変更
+  note_start: ＊
+  note_address: 姓、名、住所、生年月日を変更する場合、免許証確認が未確認に変わり、アプリから免許証確認を再度行う必要があります。
+  email: 'メールアドレス'
+  keep: 保存
+  pasword: 'パスワード'
+  current_password: 現在のパスワード
+  new_password: 新しいパスワード
+  password_confirmation: パスワード確認用
+  credit_card_change: クレジットカード
+  withdrawal: 退会
+  want_to_change: 変更してよろしいですか？
+  want_to_change_address: 姓、名、住所、生年月日の変更は再度免許証確認が必要です、よろしいですか？
+  confirmation: 確認
+  return: 戻る
+  update_completed: 変更完了しました。
+  update_completed2: 性別変更しました
+  leaving: 退会します。
+  it_ok: よろしいですか？
+  i_withdrew: 退会しました。
+  has_credit: 登録済
+  no_credit: 未登録
+validate:
+  credit_card:
+    card_number_empty: 番号を入力してください。
+    expired_date__err_month: 有効期限が不正です
+  birtday: 18歳未満の方は会員登録できません
+  token: 購入処理中にエラーが発生しました

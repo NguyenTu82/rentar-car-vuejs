@@ -1,0 +1,989 @@
+.container__cus {
+  margin-top: 80px;
+}
+
+.menu__account {
+  cursor: pointer;
+}
+
+.vehicle__number {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.vehicle__number--width {
+  width: 240px;
+}
+
+.insurance-page_cus {
+  margin-top: 3rem;
+}
+
+.menu_active {
+  font-weight: 600;
+  color: #000000;
+}
+
+.disable_btn_send {
+  background-color: #e9dac5 !important;
+}
+
+.text_count_down {
+  justify-content: center !important;
+}
+
+.datepicker_input {
+  width: 100%;
+  height: 36.98px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 2.375rem;
+}
+
+.datepicker_input .dp__input {
+  width: 100%;
+  height: 36.98px;
+  border-radius: 2.375rem;
+  padding: 0.375rem 1.75rem;
+  border: 1px solid #f3f3f3;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+.border-danger .dp__input {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-danger-rgb),var(--bs-border-opacity))!important;
+}
+
+.acc_wrapper{
+  margin: 0 auto;
+  background: #FFFFFF;
+  max-width: 1920px;
+  min-height: calc(100vh - 81px);
+}
+
+.acc_wrapper__max_width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.acc_detail_left {
+  padding-top: 100px;
+  width: 15%;
+  border-right: 1px solid #F5F5F5;
+}
+
+.tab_wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.tab_wrapper__left {
+  width: 30%;
+}
+
+.tab_wrapper__right {
+  width: 70%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7F7F85;
+}
+
+.acc_detail_right {
+  padding: 100px 0;
+  width: 45%;
+  margin: 0 80px;
+  min-height: calc(100vh - 257px);
+}
+
+.tab_wrapper_reservation_status {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__member_cus {
+  width: 500px;
+}
+
+.reservation_status__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  color: #0C47A1;
+  margin-bottom: 30px;
+}
+
+.reservation_status__box {
+  width: 100%;
+  border: 3px solid #97979C;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  display: flex;
+}
+
+.reservation_status__box_left {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.reservation_status__box_image {
+  width: 240px;
+  height: 133.43px;
+  margin: 10px 0;
+}
+
+.reservation_status__box_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.reservation_status__box_right {
+  width: 40%;
+}
+
+.reservation_status__box_right .box_time_div {
+  display: flex;
+  align-items: center;
+}
+
+.reservation_status__box_right .box_time_div .box_time_span {
+  padding: 0 10px 5px;
+}
+
+.reservation_status__box_right .reservation_status__box_button {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 107.43px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.reservation_status__box_right .reservation_status__box_button button {
+  width: 174px;
+  height: 36.98px;
+  padding: 1px 30px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #0C47A1;
+  border-color: transparent;
+  border-radius: 19px;
+}
+
+.reservation_status__box_title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.line__subdri {
+  display: inline-flex;
+  align-items: center;
+}
+
+.reservation__color--red {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FF0000;
+  margin-left: 10px;
+  border: 1px solid #FF0000;
+  border-radius: 13px;
+  padding: 0 10px;
+}
+
+.credit_card__box {
+  width: 451px;
+}
+.credit_card__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.credit_card__title button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #F5F5F5;
+  background: #0C47A1;
+  border: 1px solid #0C47A1;
+  border-radius: 25.5px;
+  width: 140px;
+}
+
+.credit_card__infor {
+  position: relative;
+  display: flex;
+  margin-bottom: 22px;
+}
+.credit_card__infor .credit_card__image{
+  width:55px;
+  height: 25px;
+  margin: 9px 14px;
+  position:absolute;
+  overflow: hidden;
+}
+
+.credit_card__infor .credit_card__img {
+  position: absolute;
+  width: 60px;
+  height: 35px;
+  margin-top: -9px;
+  margin-left: -5px;
+  object-fit: fill;
+  top: 13.5%;
+  left: 2%;
+}
+
+.credit_card__infor .credit_card__input {
+  height: 40px;
+  text-align: end;
+  padding: 0.375rem 6rem;
+  font-size: 18px;
+  border-radius: 2.375rem;
+}
+
+.credit_card__infor .credit_card__delete {
+  position: absolute;
+  width: 32px;
+  top: 13%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.modal__add--card {
+  margin-top: 6.5%;
+  max-height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+}
+
+.box_add__create_card {
+  width: 610px;
+  background: #fff;
+  border-radius: 10px;
+  font-style: normal;
+  line-height: 24px;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.box_add__create_card .box_add__create_card_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  height: 72px;
+  margin: 45px 0;
+}
+
+.box_add__create_card .box_add__create_card_input {
+  padding-bottom: 50px;
+  margin: 0 77px;
+}
+
+.box_add__create_card .box_add__create_card_input label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.add_credit_card__input {
+  font-size: 14px;
+  border-radius: 2.375rem;
+  padding: 0.375rem 1.75rem;
+  height: 36.98px;
+}
+
+.information_input {
+  padding: 0.375rem 1.75rem;
+  font-size: 14px;
+}
+
+.add_credit_card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 0;
+}
+.add_credit_card__btn button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  width: 150px;
+  height: 36.98px;
+  border-color: transparent;
+  border-radius: 24px;
+}
+
+.credit_card__btn_cancel {
+  background: #EEEEF3;
+}
+
+.credit_card__btn_add {
+  color: #fff;
+  background: #0C47A1;
+}
+
+.btn_information_cancel, .btn_information_change {
+  width: 160px;
+  justify-content: end;
+}
+
+.btn_information_cancel button, .btn_information_change button {
+  height: 45px;
+  border-color: transparent;
+  border-radius: 19px;
+  width: 147px;
+  height: 36.98px;
+}
+
+.modal_account {
+  width: 100%;
+  /* padding: 2rem 0; */
+}
+
+.box_input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.box_input_phone {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.information_input_phone {
+  width: 80%;
+  padding: 0.375rem 2rem 0.375rem 1.75rem;
+}
+
+.btn_change_phone {
+  color: #fff;
+  background: #0C47A1;
+  padding: 11px 20px;
+  border-radius: 19px;
+}
+
+.icon_phone {
+  position: absolute;
+  right: 33%;
+  font-size: 26px;
+  width: 26px;
+}
+
+.member_information_title {
+  display: flex;
+
+}
+
+.box_image_info {
+  width: 100%;
+  height: 305px;
+  background: #F6F6F6;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_image_info_left {
+  width: 40%;
+  position: relative;
+}
+.box_image_info_left .box_image_up {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 20%;
+}
+.box_image_info_left .box_image_up_load {
+  background-color: #3C3A3A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.box_image_info_left .box_image_bg{
+  margin-left: 20%;
+  background-color: #86868B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.box_image_info_rigth {
+  width: 60%;
+}
+
+.member_information_label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  height: 50px;
+  padding-right: 20px;
+}
+.member_information_edit {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.member_information_edit img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.member_information_edit img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.member_information_name_infor {
+  /* display: flex; */
+  align-items: center;
+  /* margin: 20px 0; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  word-break: break-word;
+}
+
+.name_infor__cus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member_information_edit {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.member_information_edit img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.member_information_name {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.font__weigth_600 {
+  font-weight: 600;
+}
+
+.member_info_name_cus {
+  display: flex;
+  align-items: start;
+}
+
+.member__name__mgr {
+  margin-right: 10px;
+}
+
+.info_name_empty {
+  width: 28px;
+}
+
+.info_name_display {
+  display: flex;
+}
+
+.info_name_strong {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.gender__name--mar {
+  margin-right: 30px;
+}
+
+.gender__radio {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.gender__radio--label {
+  margin-right: 5px;
+}
+
+.member_information_first_name {
+  width: 35%;
+}
+.member_information_licence_remarks {
+  width: 100%;
+}
+.mg__top {
+  margin-top: 5px;
+}
+
+.mg__bottom {
+  margin-bottom: 1rem;
+}
+
+.pd_name {
+  padding-left: 30px;
+}
+
+.member_information_name_cus {
+  display: flex;
+  justify-content: end;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.btn_num_credit {
+  color: #2D419A;
+  background-color: #ffffff;
+  border: 1px solid #2D419A;
+  cursor: auto !important;
+}
+.member_information_name__btn {
+  padding: 3px 17px;
+  border-radius: 17px;
+  cursor: auto;
+}
+
+.member_information_name_cus .btn_certified_no_eKYC {
+  color: #FFFFFF;
+  background: #FF0000;
+  border-color: transparent;
+  cursor: auto;
+}
+
+.member_information_name_cus .btn_certified_eKYC {
+  color: #0038FF;
+  background: #FFFFFF;
+  border: 1px solid #0038FF;
+  cursor: auto;
+}
+
+.member_information_start {
+  color: red;
+  padding-right: 5px;
+}
+
+.member_information_user_infor {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.member_information_user_infor .label_name {
+  font-weight: 500;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.label_name_i__cus {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.label_name_i__cus img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.member_information_user_infor .label_name .label_name_i {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+.member_information_user_infor .label_name .label_name_i img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.member_information_user_infor .label_content {
+  width: 40%;
+}
+.member_information_user_infor .btn_content {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.member_information_user_infor .btn_content button {
+  color: #fff;
+  background: #0C47A1;
+  border-color: transparent;
+  border-radius: 19px;
+  width: 147px;
+  height: 36.98px;
+}
+
+.member_information_name .btn_change__edit {
+  color: #fff;
+  background: #0C47A1;
+  border-color: transparent;
+  border-radius: 19px;
+  width: 147px;
+  height: 36.98px;
+}
+
+.member_information_user_infor .btn_verify_code button {
+  color: #000000;
+  background: #F9A323;
+  padding: 0 9px;
+  min-width: 147px;
+}
+
+.member_information_user_infor .btn_content_change {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.btn__withdrawn {
+  margin-bottom: 30px;
+}
+
+.modal_account button{
+  width: 167px;
+  height: 36.98px;
+  border: 1px solid #C4C4C4;
+  font-size: 14px;
+  color: #000000;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
+
+.modal_account .modal-body {
+  margin-top: 20px;
+}
+
+.text_content_modal {
+  margin-left: 3rem;
+  font-size: 18px;
+}
+
+.text_content_center_modal {
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal_account .cus_btn_footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.modal_account .cus-btn-default, .modal_account .cus-btn-default:hover {
+  height: 36.98px;
+  background: #EEEEF3;
+  border: 1px solid #EEEEF3;
+  border-radius: 90px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  box-shadow: none;
+}
+
+.modal_account .cus-btn-primary, .modal_account .cus-btn-primary:hover {
+  color: #FFFFFF;
+  background: #0C47A1;
+  border: 1px solid #0C47A1;
+  height: 36.98px;
+  box-shadow: none;
+}
+
+.form__input_group {
+  margin-bottom: 15px;
+}
+
+/* add passenge */
+.revervation__add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.revervation__add--btn {
+  border: none;
+  background: #FFFFFF;
+  padding: 1px;
+  height: 37px;
+  width: 37px;
+}
+
+.revervation__add--btn .fa-regular {
+  font-size: 36px;
+}
+
+.revervation__add--btn-abs {
+  border: none;
+  background: #FFFFFF;
+  padding: 1px;
+}
+
+.revervation__add--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group__email {
+  position: relative;
+  width: 100%;
+}
+
+.group__email img {
+  position: absolute;
+  top: 32%;
+  left: 15px;
+}
+
+.revervation__add--input {
+  padding: 0.4rem 1.75rem 0.6rem 2.5rem;
+}
+
+.btn__delete--subdrive {
+  display: flex;
+  justify-content: end;
+}
+
+.btn__delete--red {
+  margin: 0;
+  height: 48px;
+  min-width: 210px;
+  padding: 0.5rem 2rem;
+  border-radius: 24px;
+  border: transparent;
+  font-size: 14px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  box-shadow: 0 0 0 transparent;
+  color: #ffffff;
+  background: #FF0000;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.btn__delete--red:hover, .btn__delete--red:active, .btn__delete--red:focus {
+  color: #ffffff;
+  background: #FF0000;
+}
+
+@media screen and (max-width: 1300px){
+  .acc_detail_left {
+    width: 30%;
+  }
+  .acc_detail_right {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .acc_wrapper{
+    margin-top: 70px;
+  }
+  .acc_detail_left {
+    width: 25%;
+  }
+  .acc_detail_right {
+    width: 75%;
+    margin: 0 10px;
+  }
+  .tab_wrapper__left {
+    width: 10%;
+  }
+  .tab_wrapper__right {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .acc_wrapper{
+    margin-top: 50px;
+  }
+  .acc_wrapper__mgtop{
+    margin-top: 150px;
+  }
+  .acc_wrapper__max_width {
+    justify-content: normal;
+  }
+
+  .acc_detail_right {
+    width: 99%;
+    margin: 0 0 0 20px;
+  }
+
+  .content__member_cus {
+    width: 99%;
+  }
+
+  .tab_wrapper__left {
+    width: 0;
+  }
+
+  .box_add__create_card {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reservation_status__title {
+    margin-top:  20px;
+  }
+  .acc_wrapper__max_width {
+    flex-direction: column;
+  }
+
+  .acc_detail_left {
+    border-right: none;
+    width: 100%;
+  }
+
+  .acc_detail_right {
+    padding-top: 30px;
+    margin: 0;
+    min-height: calc(100vh - 400px);
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  li.nav-item {
+    width: 50%;
+  }
+
+  .member_information_first_name {
+    width: 43%;
+  }
+
+  .member_information_name {
+    padding-top: 10px;
+  }
+
+  .btn_information_change button {
+    margin-left: 5px;
+  }
+
+  .member_information_user_infor .label_name {
+    width: 35%;
+  }
+
+  .member_information_user_infor .label_content {
+    width: 65%;
+  }
+
+  .information_input_phone {
+    width: 100%;
+  }
+
+  .btn_verify_code--cus {
+    justify-content: flex-end;
+  }
+
+  .text_count_down {
+    padding-left: 25%;
+  }
+
+  .member_information_user_infor .btn_content_change {
+    width: 65%;
+  }
+
+  .member_information_user_infor .label_name--cus {
+    width: 41%;
+  }
+
+  .reservation_status__box {
+    flex-direction: column;
+  }
+
+  .reservation_status__box_left {
+    width: 100%;
+  }
+
+  .reservation_status__box_right {
+    width: 100%;
+  }
+
+  .reservation_status__box_image {
+    width: 100%;
+  }
+
+  .vehicle__number--width {
+    width: 100%;
+  }
+
+  .reservation_status__box_right .reservation_status__box_button {
+    padding-right: 0;
+  }
+
+  .credit_card__box {
+    width: 100%;
+  }
+
+  .acc_detail_right {
+    width: 100%;
+  }
+
+  .box_add__create_card {
+    width: 100%;
+  }
+
+  .box_add__create_card .box_add__create_card_input {
+    margin: 0 15px;
+  }
+}

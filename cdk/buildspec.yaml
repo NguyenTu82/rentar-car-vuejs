@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      # Install dependencies for both site content and for CDK
+      - npm install -g npm@latest
+      - npm install -g aws-cdk
+      - npm install -g pnpm
+      - cd cdk
+      - npm install
+      - cd ..
+      - echo $ENV_FILE | tr " " "\n" > .env.production
+      - pnpm install
+  build:
+    commands:
+      # Compile the site content
+      - pnpm build
+      # Deploy via the CDK
+      - cd cdk
+      - npm run build
+      - cdk deploy WebAppStack -c contxt=$CONTXT_ENV --require-approval never
+
+      # Clear cache
+      - echo "[+] Clear cache ..."
+      - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
+
+cache:
+  paths:
+    - '/root/.npm/**/*'

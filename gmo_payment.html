@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<script src="{{%VITE_GMO_URL%}}"></script>
+	</head>
+
+	<style>
+		/* Absolute Center Spinner */
+		.loading {
+			position: fixed;
+			z-index: 999;
+			height: 2em;
+			width: 2em;
+			overflow: show;
+			margin: auto;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+
+		/* Transparent Overlay */
+		.loading:before {
+			content: '';
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: radial-gradient(rgba(20, 20, 20, 0.8), rgba(0, 0, 0, 0.8));
+
+			background: -webkit-radial-gradient(rgba(20, 20, 20, 0.8), rgba(0, 0, 0, 0.8));
+		}
+
+		/* :not(:required) hides these rules from IE9 and below */
+		.loading:not(:required) {
+			/* hide "loading..." text */
+			font: 0/0 a;
+			color: transparent;
+			text-shadow: none;
+			background-color: transparent;
+			border: 0;
+		}
+
+		.loading:not(:required):after {
+			content: '';
+			display: block;
+			font-size: 10px;
+			width: 1em;
+			height: 1em;
+			margin-top: -0.5em;
+			-webkit-animation: spinner 150ms infinite linear;
+			-moz-animation: spinner 150ms infinite linear;
+			-ms-animation: spinner 150ms infinite linear;
+			-o-animation: spinner 150ms infinite linear;
+			animation: spinner 150ms infinite linear;
+			border-radius: 0.5em;
+			-webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+				rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+				rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
+				rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+			box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
+				rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
+				rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
+				rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+		}
+
+		/* Animation */
+
+		@-webkit-keyframes spinner {
+			0% {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			100% {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+		@-moz-keyframes spinner {
+			0% {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			100% {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+		@-o-keyframes spinner {
+			0% {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			100% {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes spinner {
+			0% {
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-ms-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			100% {
+				-webkit-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+	<body>
+		<div class="loading">Loading&#8230;</div>
+		<!-- 加盟店購入フォーム -->
+		<form id="purchaseForm" action="(加盟店様 URL)" method="post">
+			<p class="purchaseForm__hide">
+				<input type="hidden" value="" name="kameitenn_chumon_bango" />
+				<!-- 加盟店での注文番号等、決済を特定できる情報 -->
+				<input type="hidden" value="" id="token" name="token" />
+				<!-- 取得したトークンを設定するプレースホルダ -->
+			</p>
+		</form>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function (event) {
+				doPurchase();
+			});
+			function doPurchase() {
+				var cardno, expire, securitycode, holdername;
+
+				const queryString = window.location.search;
+				const urlParams = new URLSearchParams(queryString);
+
+				var cardno = urlParams.get('cardno');
+				var expire = urlParams.get('expire_year') + urlParams.get('expire_month');
+				var securitycode = urlParams.get('securitycode');
+				var holdername = urlParams.get('holdername');
+				var tokennumber = urlParams.get('tokennumber');
+
+				Multipayment.init('{{%VITE_GMO_SHOP_ID%}}');
+				Multipayment.getToken(
+					{
+						cardno,
+						expire,
+						securitycode,
+						holdername,
+						tokennumber,
+					},
+					execPurchase,
+				);
+
+				setTimeout(execPurchase, 10000)
+			}
+		</script>
+	</body>
+</html>

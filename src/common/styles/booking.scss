@@ -1,0 +1,517 @@
+.select-form {
+	.custom-option, .custom-option2 {
+		display: grid !important;
+		grid-template-columns: 50px 1fr 75px 70px;
+		width: 100%;
+		align-items: center;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 25px;
+		border: 1px solid #ccc;
+		margin-bottom: 10px;
+		padding: 10px;
+	
+		select {
+			height: 35px;
+		}
+	
+		.meta {
+			width: 100%;
+		}
+	}
+
+	.custom-option2 {
+		grid-template-columns: 50px 1fr 50px 25px 50px 25px;
+	}
+}
+.page {
+	margin-top: 80px;
+	// padding: 1.5rem 0;
+	.page-header {
+		display: flex;
+		justify-content: flex-end;
+		border-bottom: 1px solid black;
+		padding-bottom: 1.5rem;
+		p {
+			margin-right: 3rem;
+			font-size: 18px;
+		}
+	}
+	.page-contain {
+		position: relative;
+		border-bottom: 1px solid #000;
+
+		.car-info-basic {
+			padding-top: 20px;
+			display: flex;
+			gap: 30px;
+			justify-content: space-around;
+
+			.show_info_booking {
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				gap: 10px;
+
+				.car-title {
+					text-align: left;
+					font-size: 2.5vmin;
+					font-weight: bold;
+				}
+
+				p {
+					display: flex;
+					align-items: center;
+					font-size: 2vmin;
+				}
+			}
+		}
+
+		.car-info-show {
+			height: auto;
+			overflow: hidden;
+
+			.more {
+				display: block;
+			}
+		}
+
+		.car-info-hide {
+			.more {
+				display: none;
+			}
+		}
+
+		.action__img {
+			width: 40px;
+			height: 40px;
+			@media screen and (max-width: 480px) {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		.action_show_hide {
+			position: absolute;
+			bottom: 5px;
+			right: calc(50% - 20px);
+		}
+	}
+  
+	.page-detail {
+		display: flex;
+		padding: 1.5rem 0;
+		background: #0000;
+		justify-content: space-between;
+		&.insurance-page {
+			.car-box-left {
+				width: 55%;
+				.page-insurance {
+					display: flex;
+				}
+				.fancy-box {
+					width: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.herro-img {
+						width: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						img {
+							height: auto;
+							object-fit: cover;
+							min-width: 150px;
+						}
+					}
+				}
+				.fancy__box--display {
+					display: unset;
+				}
+				.base-detail {
+					padding-left: 3rem;
+					padding-bottom: 3rem;
+					p {
+						font-size: 14px;
+						color: #000000;
+						padding: 0.5rem 0;
+					}
+				}
+			}
+			.car-box-right {
+				display: flex;
+				align-items: flex-end;
+				.box-action {
+					width: 100%;
+				}
+			}
+
+			.option-insurence {
+				h4 {
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 24px;
+				}
+			}
+			.reservation {
+				display: block;
+				.show-modal {
+					a {
+						border: 1px solid #c4c4c4;
+						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+						border-radius: 5px;
+						padding: 5px 20px;
+						color: #000 !important;
+						font-weight: bold;
+					}
+				}
+				.booking-infomation {
+					.list-info {
+						h4 {
+							border-bottom: 1px solid #000000;
+							margin-bottom: 1rem;
+						}
+						.list-sub-price {
+							// padding: 1rem 0;
+							.sub-price {
+								display: flex;
+								justify-content: space-between;
+								p {
+									font-size: 14px;
+									margin-bottom: 0;
+								}
+							}
+							.sub-price_title {
+								font-weight: 600;
+							}
+							.sub-price__cus {
+								p {
+									margin-left: 20px;
+								}
+							}
+							span {
+								color: #9d9da1;
+							}
+						}
+						.list-sub-price_cus {
+							padding: 0.5rem 0;
+						}
+					}
+					.sub-price.total {
+						display: flex;
+						justify-content: space-between;
+						border-top: 1px solid #000000;
+						margin-top: 1rem;
+						padding-top: 1rem;
+						font-size: 14px;
+					}
+				}
+				.add-more-card {
+					width: 100%;
+					text-align: right;
+					padding: 2rem 0;
+				}
+				.red_note {
+					color: #ff0000;
+					font-size: 14px;
+					width: 100%;
+					text-align: center;
+					margin-top: 2rem;
+				}
+			}
+		}
+		.car-box-left {
+			width: 55%;
+		}
+		.car-box-right {
+			width: 40%;
+			.base-detail {
+				padding-left: 3rem;
+				padding-bottom: 3rem;
+				p {
+					font-size: 14px;
+					color: #000000;
+					padding: 0.5rem 0;
+				}
+			}
+			.note {
+				margin-bottom: 3rem;
+				p {
+					font-size: 14px;
+					color: #000000;
+					margin-bottom: 1.5rem;
+					line-height: 22px;
+				}
+			}
+			.price {
+				color: #000000;
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				padding-bottom: 1rem;
+				.fee {
+					font-size: 20px;
+				}
+				.amount {
+					font-size: 30px;
+					font-weight: 500;
+				}
+			}
+			.box-action {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 3rem;
+				align-items: center;
+			}
+		}
+		.box-action {
+			display: flex;
+			margin-top: 1rem;
+			justify-content: space-between;
+			button {
+				margin: 0 !important;
+				height: 48px;
+				min-width: 130px;
+				// padding: 0.5rem 2rem;
+				border-radius: 24px;
+				border: transparent;
+				font-size: 14px;
+				-webkit-border-radius: 24px;
+				-moz-border-radius: 24px;
+				-ms-border-radius: 24px;
+				-o-border-radius: 24px;
+				box-shadow: 0 0 0 transparent;
+				&.btn-secondary {
+					background: #eeeef3;
+					color: #000;
+				}
+				&.btn-primary {
+					margin-left: 10% !important;
+					background: #0c47a1;
+				}
+				&.btn__primary {
+					color: #ffffff;
+					background: #0c47a1;
+				}
+			}
+		}
+		.box-action__cus {
+			justify-content: end;
+			width: 100%;
+		}
+
+		.car-box-left {
+			.fancy-box {
+				.herro-img {
+					width: 70%;
+					margin: 0 auto;
+					margin-bottom: 1.5rem;
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.gallary-image {
+					display: flex;
+					justify-content: space-between;
+					.item-image {
+						width: 25%;
+						img {
+							width: 99%;
+							object-fit: cover;
+							height: 135px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.modal-add-car {
+	input {
+		font-size: 14px;
+		border: 1.5px solid #000;
+		height: 48px;
+		border-color: #000;
+		border-radius: 24px;
+		-webkit-border-radius: 24px;
+		-moz-border-radius: 24px;
+		-ms-border-radius: 24px;
+		-o-border-radius: 24px;
+	}
+	.modal-dialog {
+		margin-top: 150px;
+	}
+	.modal-content {
+		border: unset;
+		box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+		border-radius: 10px;
+	}
+	.modal-body {
+		padding: 5rem 3rem;
+		padding-bottom: 1rem;
+		font-size: 14px;
+		border: unset;
+	}
+	.modal-footer {
+		justify-content: center;
+		border: unset;
+		padding-bottom: 4rem;
+		.btn {
+			height: 48px;
+			min-width: 160px;
+			padding: 0.5rem 2rem;
+			border-radius: 24px;
+			border: transparent;
+			font-size: 14px;
+			-webkit-border-radius: 24px;
+			-moz-border-radius: 24px;
+			-ms-border-radius: 24px;
+			-o-border-radius: 24px;
+			&.btn-secondary {
+				background: #eeeef3;
+				color: #000;
+			}
+			&.btn-primary {
+				background: #0c47a1;
+			}
+		}
+	}
+}
+
+.align-items-center__cus {
+	align-items: start;
+}
+
+.space__margin {
+	padding-top: 30px;
+}
+
+.list__info--cus {
+	padding: 35px;
+	padding-bottom: 10px;
+}
+.box__action--cus {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 35px 2rem;
+	gap: 10px;
+	button {
+		height: 48px;
+		min-width: 100px;
+		padding: 0.5rem 2rem;
+		border: transparent;
+		font-size: 14px;
+		-webkit-border-radius: 24px;
+		-moz-border-radius: 24px;
+		-ms-border-radius: 24px;
+		-o-border-radius: 24px;
+		border-radius: 24px;
+		box-shadow: 0 0 0 transparent;
+		background: #ccc;
+
+		&.btn-secondary {
+			background: #eeeef3;
+			color: #000;
+		}
+		&.btn-primary {
+			background: #0c47a1;
+			color: white;
+		}
+		&.btn__primary {
+			color: #ffffff;
+			background: #0c47a1;
+		}
+	}
+}
+
+.box__action--create {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 35px 1.5rem;
+	button {
+		margin: 0;
+		height: 48px;
+		min-width: 190px;
+		padding: 0.5rem 2rem;
+		border-radius: 24px;
+		border: transparent;
+		font-size: 14px;
+		-webkit-border-radius: 24px;
+		-moz-border-radius: 24px;
+		-ms-border-radius: 24px;
+		-o-border-radius: 24px;
+		box-shadow: 0 0 0 transparent;
+		&.btn__primary {
+			color: #ffffff;
+			background: #0c47a1;
+			width: 100px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.input__group--cus {
+	display: block;
+	text-align: start;
+}
+.display__content {
+	display: contents;
+}
+
+@media screen and (max-width: 768px) {
+	.page {
+		.page-detail {
+			display: block;
+		}
+
+		.page-detail.insurance-page {
+			.car-box-left {
+				width: 100%;
+			}
+
+			.car-box-right {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.page .page-detail .box-action button {
+		min-width: 130px;
+		font-size: 13px;
+	}
+
+	.page .page-detail .box-action button.btn-primary {
+		margin-left: 2% !important;
+	}
+
+	.page .page-contain .car-info-basic {
+		margin: 0;
+	}
+
+	.d-flex--cus {
+		display: block !important;
+	}
+
+	.title-typecar {
+		margin: 1rem 0;
+		text-align: center;
+	}
+
+	.filters .category-tag {
+		margin: 6px !important;
+	}
+	.mg_top__info {
+		margin-top: 160px !important ;
+	}
+}
+
+button.btn-primary {
+	background: #0c47a1;
+	border-radius: 24px;	
+	height: 48px;
+}

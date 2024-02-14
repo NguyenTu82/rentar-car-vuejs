@@ -1,0 +1,103 @@
+.reverconfirm.page-detail {
+    display: flex;
+    background: #0000;
+    justify-content: space-between;
+    
+    &.insurance-page {
+      .base-detail {
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          color: #000000;
+          padding: 0.5rem 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .car-box-right {
+      display: flex;
+      align-items: flex-end;
+      .box-action {
+        width: 100%;
+      }
+      &.reservation {
+        display: block;
+        .booking-infomation {
+          .list-info {
+            h4 {
+              border-bottom: 1px solid #000000;
+              margin-bottom: 1rem;
+            }
+            .list-sub-price {
+              // padding: 1rem 0;
+              .sub-price {
+                display: flex;
+                justify-content: space-between;
+                p {
+                  font-size: 14px;
+                  margin-bottom: 0;
+                }
+              }
+              .sub-price_title {
+                font-weight: 600;
+              }
+              span {
+                color: #9d9da1;
+              }
+            }
+          }
+          .sub-price.total {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #000000;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            font-size: 14px;
+          }
+        }
+        .add-more-card {
+          width: 100%;
+          text-align: right;
+          padding: 2rem 0;
+        }
+        .red_note {
+          color: #ff0000;
+          font-size: 14px;
+          width: 100%;
+          text-align: center;
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .option-insurence {
+      h4 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  .option-insurence{
+    .select-form{
+      .custom-option{
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        label{
+          .meta{
+            p{
+              margin: 0;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 24px;
+              display: flex;
+              align-items: center;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+

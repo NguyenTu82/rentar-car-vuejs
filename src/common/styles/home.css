@@ -1,0 +1,11 @@
+.list .item .text {
+	font-family: 'Radio Canada';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 50px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+	margin-left: 21px;
+}
